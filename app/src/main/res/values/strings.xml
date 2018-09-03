@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">单词电台</string>
+    <string name="choose_a_part">选择一个Part：</string>
+    <string name="begin">播放</string>
+    <string name="pause">暂停</string>
+    <string name="hello">example</string>
+    <string name="world">示例，例子</string>
+    <string name="read_chinese">朗读中文释义</string>
+    <string name="read_times">只读一遍</string>
+    <string name="read_times_two">读两遍</string>
+    <string name="not_read_chinese">只朗读单词</string>
+    <string name="network_not_work">网络错误</string>
+</resources>

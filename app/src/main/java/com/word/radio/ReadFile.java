@@ -1,0 +1,26 @@
+package com.word.radio;
+
+import android.content.Context;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public class ReadFile {
+    public static String readAssetsFile(Context context, String fileName) {
+        try {
+            //Return an AssetManager instance for your application's package
+            InputStream is = context.getAssets().open(fileName + ".wds");
+            int size = is.available();
+            // Read the entire asset into a local byte buffer.
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            // Convert the buffer into a string.
+            String text = new String(buffer, "utf-8");
+            return text;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "读取错误，请检查文件名";
+    }
+}
